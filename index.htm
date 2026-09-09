@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Veyora - Premium fashion and lifestyle collection. Style that defines you.">
+
+    <title>Veyora | Style That Defines You</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">VEYORA</a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#categories">Categories</a>
+            <a href="#new-arrivals">New Arrivals</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="icon-btn" id="searchToggle" aria-label="Search">
+                🔍
+            </button>
+
+            <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">
+                ♡
+            </button>
+
+            <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Menu">
+                ☰
+            </button>
+
+        </div>
+    </div>
+
+    <div class="search-box" id="searchBox">
+        <div class="container">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+                autocomplete="off"
+            >
+        </div>
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <span class="eyebrow">NEW COLLECTION 2026</span>
+
+            <h1>
+                Style That
+                <span>Defines You.</span>
+            </h1>
+
+            <p>
+                Discover premium fashion and lifestyle essentials
+                designed for modern living.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#shop" class="btn btn-dark">Shop Now</a>
+                <a href="#categories" class="btn btn-outline">
+                    Explore Collection
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <strong>10K+</strong>
+                    <span>Happy Customers</span>
+                </div>
+
+                <div>
+                    <strong>500+</strong>
+                    <span>Premium Products</span>
+                </div>
+
+                <div>
+                    <strong>4.9★</strong>
+                    <span>Customer Rating</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1000&q=85"
+                alt="Veyora fashion collection"
+            >
+
+            <div class="floating-card">
+                <span>PREMIUM</span>
+                <strong>Collection</strong>
+                <small>New Season • 2026</small>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= BRAND STRIP ================= -->
+<section class="brand-strip">
+    <div class="container brand-items">
+
+        <div>
+            <span>✦</span>
+            <strong>PREMIUM QUALITY</strong>
+        </div>
+
+        <div>
+            <span>✦</span>
+            <strong>MODERN DESIGN</strong>
+        </div>
+
+        <div>
+            <span>✦</span>
+            <strong>FREE SHIPPING</strong>
+        </div>
+
+        <div>
+            <span>✦</span>
+            <strong>EASY RETURNS</strong>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+<section class="section categories-section" id="categories">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">EXPLORE</span>
+                <h2>Shop By Category</h2>
+            </div>
+
+            <p>
+                Find your style from our carefully selected collections.
+            </p>
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card" data-category="men">
+                <img
+                    src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=800&q=80"
+                    alt="Men's Fashion"
+                >
+                <div class="category-overlay">
+                    <span>01</span>
+                    <h3>Men's Fashion</h3>
+                    <button>Explore →</button>
+                </div>
+            </div>
+
+            <div class="category-card" data-category="women">
+                <img
+                    src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+                    alt="Women's Fashion"
+                >
+                <div class="category-overlay">
+                    <span>02</span>
+                    <h3>Women's Fashion</h3>
+                    <button>Explore →</button>
+                </div>
+            </div>
+
+            <div class="category-card" data-category="sneakers">
+                <img
+                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+                    alt="Sneakers"
+                >
+                <div class="category-overlay">
+                    <span>03</span>
+                    <h3>Sneakers</h3>
+                    <button>Explore →</button>
+                </div>
+            </div>
+
+            <div class="category-card" data-category="watches">
+                <img
+                    src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=80"
+                    alt="Watches"
+                >
+                <div class="category-overlay">
+                    <span>04</span>
+                    <h3>Watches</h3>
+                    <button>Explore →</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+<section class="section products-section" id="shop">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">OUR COLLECTION</span>
+                <h2>Featured Products</h2>
+            </div>
+
+            <p>
+                Premium pieces made for everyday style.
+            </p>
+        </div>
+
+        <div class="filter-buttons">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="men">
+                Men
+            </button>
+
+            <button class="filter-btn" data-filter="women">
+                Women
+            </button>
+
+            <button class="filter-btn" data-filter="sneakers">
+                Sneakers
+            </button>
+
+            <button class="filter-btn" data-filter="watches">
+                Watches
+            </button>
+
+            <button class="filter-btn" data-filter="bags">
+                Bags
+            </button>
+
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+            <!-- Product 1 -->
+            <article class="product-card" data-category="men">
+
+                <div class="product-image">
+
+                    <span class="product-badge">NEW</span>
+
+                    <button class="wishlist product-wishlist"
+                            aria-label="Add to wishlist">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+                        alt="Premium Oversized T-Shirt"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">MEN</span>
+
+                    <h3>Premium Oversized T-Shirt</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(48)</span>
+                    </div>
+
+                    <div class="price">
+                        <strong>₹1,299</strong>
+                        <del>₹1,799</del>
+                        <span>28% OFF</span>
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="Premium Oversized T-Shirt"
+                        data-price="1299"
+                        data-image="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </article>
+
+
+            <!-- Product 2 -->
+            <article class="product-card" data-category="sneakers">
+
+                <div class="product-image">
+
+                    <span class="product-badge sale">SALE</span>
+
+                    <button class="wishlist product-wishlist">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"
+                        alt="Urban Street Sneakers"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">SNEAKERS</span>
+
+                    <h3>Urban Street Sneakers</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(72)</span>
+                    </div>
+
+                    <div class="price">
+                        <strong>₹2,499</strong>
+                        <del>₹3,499</del>
+                        <span>29% OFF</span>
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="Urban Street Sneakers"
+                        data-price="2499"
+                        data-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </article>
+
+
+            <!-- Product 3 -->
+            <article class="product-card" data-category="watches">
+
+                <div class="product-image">
+
+                    <button class="wishlist product-wishlist">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=700&q=80"
+                        alt="Minimal Classic Watch"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">WATCHES</span>
+
+                    <h3>Minimal Classic Watch</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(35)</span>
+                    </div>
+
+                    <div class="price">
+                        <strong>₹3,999</strong>
+                        <del>₹5,499</del>
+                        <span>27% OFF</span>
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="Minimal Classic Watch"
+                        data-price="3999"
+                        data-image="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=700&q=80">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </article>
+
+
+            <!-- Product 4 -->
+            <article class="product-card" data-category="women">
+
+                <div class="product-image">
+
+                    <span class="product-badge">NEW</span>
+
+                    <button class="wishlist product-wishlist">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=700&q=80"
+                        alt="Elegant Summer Dress"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">WOMEN</span>
+
+                    <h3>Elegant Summer Dress</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(61)</span>
+                    </div>
+
+                    <div class="price">
+                        <strong>₹2,199</strong>
+                        <del>₹3,099</del>
+                        <span>29% OFF</span>
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="Elegant Summer Dress"
+                        data-price="2199"
+                        data-image="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=700&q=80">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </article>
+
+
+            <!-- Product 5 -->
+            <article class="product-card" data-category="bags">
+
+                <div class="product-image">
+
+                    <button class="wishlist product-wishlist">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=80"
+                        alt="Urban Crossbody Bag"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">BAGS</span>
+
+                    <h3>Urban Crossbody Bag</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(29)</span>
+                    </div>
+
+                    <div class="price">
+                        <strong>₹1,899</strong>
+                        <del>₹2,599</del>
+                        <span>27% OFF</span>
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="Urban Crossbody Bag"
+                        data-price="1899"
+                        data-image="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=80">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </article>
+
+
+            <!-- Product 6 -->
+            <article class="product-card" data-category="men">
+
+                <div class="product-image">
+
+                    <button class="wishlist product-wishlist">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?auto=format&fit=crop&w=700&q=80"
+                        alt="Classic Denim Jacket"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">MEN</span>
+
+                    <h3>Classic Denim Jacket</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(42)</span>
+                    </div>
+
+                    <div class="price">
+                        <strong>₹2,799</strong>
+                        <del>₹3,899</del>
+                        <span>28% OFF</span>
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="Classic Denim Jacket"
+                        data-price="2799"
+                        data-image="https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?auto=format&fit=crop&w=700&q=80">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </article>
+
+
+            <!-- Product 7 -->
+            <article class="product-card" data-category="women">
+
+                <div class="product-image">
+
+                    <span class="product-badge sale">SALE</span>
+
+                    <button class="wishlist product-wishlist">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80"
+                        alt="Modern Casual Outfit"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">WOMEN</span>
+
+                    <h3>Modern Casual Outfit</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(53)</span>
+                    </div>
+
+                    <div class="price">
+                        <strong>₹2,599</strong>
+                        <del>₹3,799</del>
+                        <span>32% OFF</span>
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="Modern Casual Outfit"
+                        data-price="2599"
+                        data-image="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </article>
+
+
+            <!-- Product 8 -->
+            <article class="product-card" data-category="sneakers">
+
+                <div class="product-image">
+
+                    <span class="product-badge">NEW</span>
+
+                    <button class="wishlist product-wishlist">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=700&q=80"
+                        alt="White Essential Sneakers"
+                    >
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">SNEAKERS</span>
+
+                    <h3>White Essential Sneakers</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(81)</span>
+                    </div>
+
+                    <div class="price">
+                        <strong>₹2,299</strong>
+                        <del>₹3,299</del>
+                        <span>30% OFF</span>
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="White Essential Sneakers"
+                        data-price="2299"
+                        data-image="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=700&q=80">
+                        Add to Cart
+                    </button>
+
+                </div>
+            </article>
+
+        </div>
+
+        <p class="no-results" id="noResults">
+            No products found.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- ================= PROMO ================= -->
+<section class="promo-section">
+
+    <div class="container promo-content">
+
+        <span class="eyebrow">LIMITED TIME OFFER</span>
+
+        <h2>Elevate Your Everyday Style.</h2>
+
+        <p>
+            Discover premium essentials with discounts up to
+            <strong>40% OFF</strong>.
+        </p>
+
+        <a href="#shop" class="btn btn-light">
+            Shop The Offer
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NEW ARRIVALS ================= -->
+<section class="section arrivals-section" id="new-arrivals">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">JUST DROPPED</span>
+                <h2>New Arrivals</h2>
+            </div>
+        </div>
+
+        <div class="arrival-grid">
+
+            <div class="arrival-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=80"
+                    alt="Everyday Essentials"
+                >
+
+                <div class="arrival-content">
+                    <span>01 / ESSENTIALS</span>
+                    <h3>Everyday Essentials</h3>
+                    <a href="#shop">Shop Now →</a>
+                </div>
+
+            </div>
+
+            <div class="arrival-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1000&q=80"
+                    alt="Modern Classics"
+                >
+
+                <div class="arrival-content">
+                    <span>02 / CLASSICS</span>
+                    <h3>Modern Classics</h3>
+                    <a href="#shop">Shop Now →</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= BENEFITS ================= -->
+<section class="benefits-section">
+
+    <div class="container benefits-grid">
+
+        <div class="benefit">
+            <div class="benefit-icon">✦</div>
+            <h3>Premium Quality</h3>
+            <p>Carefully selected products made to last.</p>
+        </div>
+
+        <div class="benefit">
+            <div class="benefit-icon">↗</div>
+            <h3>Fast Delivery</h3>
+            <p>Quick and reliable delivery across India.</p>
+        </div>
+
+        <div class="benefit">
+            <div class="benefit-icon">↩</div>
+            <h3>Easy Returns</h3>
+            <p>Simple return process for your convenience.</p>
+        </div>
+
+        <div class="benefit">
+            <div class="benefit-icon">✓</div>
+            <h3>Secure Payments</h3>
+            <p>Your payment information stays protected.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section class="section about-section" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1000&q=80"
+                alt="Veyora fashion store"
+            >
+        </div>
+
+        <div class="about-content">
+
+            <span class="eyebrow">ABOUT VEYORA</span>
+
+            <h2>Fashion Made For Your Everyday.</h2>
+
+            <p>
+                Veyora is a modern fashion and lifestyle brand focused
+                on bringing together everyday comfort and contemporary style.
+            </p>
+
+            <p>
+                From premium basics to modern accessories, every product
+                is selected to help you express your individual style.
+            </p>
+
+            <a href="#shop" class="text-link">
+                Discover Veyora →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section testimonials-section">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+            <span class="eyebrow">CUSTOMER LOVE</span>
+            <h2>What They Say</h2>
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "The quality and design are excellent.
+                    Veyora has quickly become one of my favorite brands."
+                </p>
+                <strong>Arjun Mehta</strong>
+                <span>Verified Customer</span>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "Beautiful products, fast delivery and a really
+                    smooth shopping experience."
+                </p>
+                <strong>Riya Sharma</strong>
+                <span>Verified Customer</span>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "The collection feels premium without being
+                    complicated. Definitely recommended."
+                </p>
+                <strong>Karan Singh</strong>
+                <span>Verified Customer</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter-section">
+
+    <div class="container newsletter-content">
+
+        <span class="eyebrow">STAY IN STYLE</span>
+
+        <h2>Get The Latest From Veyora.</h2>
+
+        <p>
+            Subscribe for new arrivals, exclusive offers and style updates.
+        </p>
+
+        <form id="newsletterForm" class="newsletter-form">
+
+            <input
+                type="email"
+                id="emailInput"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer" id="contact">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo">VEYORA</a>
+
+            <p>
+                Style that defines you.
+                Premium fashion and lifestyle for the modern generation.
+            </p>
+
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Twitter">TW</a>
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+            <h4>Shop</h4>
+            <a href="#shop">Men</a>
+            <a href="#shop">Women</a>
+            <a href="#shop">Sneakers</a>
+            <a href="#shop">Watches</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Support</h4>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">FAQs</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <a href="mailto:hello@veyora.com">hello@veyora.com</a>
+            <a href="tel:+919999999999">+91 99999 99999</a>
+            <span>Jaipur, Rajasthan, India</span>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2026 Veyora. All rights reserved.</p>
+        </div>
+    </div>
+
+</footer>
+
+
+<!-- ================= CART ================= -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-header">
+
+        <div>
+            <span class="eyebrow">YOUR BAG</span>
+            <h2>Shopping Cart</h2>
+        </div>
+
+        <button id="closeCart" class="close-btn">×</button>
+
+    </div>
+
+    <div class="cart-items" id="cartItems">
+
+        <div class="empty-cart" id="emptyCart">
+            <div class="empty-icon">🛒</div>
+            <h3>Your cart is empty</h3>
+            <p>Add something you love.</p>
+            <a href="#shop" class="btn btn-dark" id="continueShopping">
+                Continue Shopping
+            </a>
+        </div>
+
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">₹0</strong>
+        </div>
+
+        <button class="checkout-btn" id="checkoutBtn">
+            Proceed to Checkout
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= TOAST ================= -->
+<div class="toast" id="toast">
+    <span>✓</span>
+    <p id="toastMessage">Product added to cart.</p>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
